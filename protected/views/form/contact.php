@@ -1,8 +1,10 @@
 <?php $form = $this->beginWidget('CActiveForm', array(
     'id'=>'contact-form',
     'enableClientValidation'=>true,
-    //'enableAjaxValidation'=>true,));
-// Включаем Widget для построения формы  ?>
+    //'enableAjaxValidation'=>true,)
+    ));
+// Включаем Widget для построения формы
+?>
 
     <?php echo $form->errorSummary($model); // Выдача всех ошибок заполнения формы ?>
 
