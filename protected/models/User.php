@@ -10,6 +10,7 @@
  */
 class User extends CActiveRecord
 {
+	public $now;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return static the static model class
@@ -37,7 +38,9 @@ class User extends CActiveRecord
 		return array(
 			array('username, password, email', 'required'),
 			array('username, password, email', 'length', 'max'=>128),
-			array('profile', 'safe'),
+			array('name, fname', 'length', 'max'=>100),
+			array('active', 'numerical', 'integerOnly'=>true),
+			array('profile, active', 'safe'),
 		);
 	}
 
@@ -52,6 +55,22 @@ class User extends CActiveRecord
 			'posts' => array(self::HAS_MANY, 'Post', 'author_id'),
 		);
 	}
+
+
+	public function scopes()
+	{
+		return array(
+			'active' => array(
+				'condition' => 'active = 1'
+			),
+			'id' => array(
+				'condition' => 'id = 2'
+			),
+		);
+
+
+	}
+
 
 	/**
 	 * @return array customized attribute labels (name=>label)

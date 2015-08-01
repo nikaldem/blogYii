@@ -118,7 +118,7 @@ class FormController extends Controller
         $model = new RegisterTestForm;
         $form = new CForm("application.views.formconstruct.registerbuilder",$model);
 
-        if($form->submitted('register') && $form->validate()) //???????????????????????????
+        if($form->submitted('register') && $form->validate())
         //if($form->submitted('contact') && $form->validate())
         //if($form->submitted('register'))
         {
