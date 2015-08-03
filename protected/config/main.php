@@ -50,6 +50,22 @@ return array(
 
 			'class' => 'application.components.Url'
 		),
+
+		'cache' => array(
+			'class' => 'CFileCache',
+
+		),
+		/*
+		'cache1' => array(
+			'class' => 'CFileCache',
+
+		),
+
+		'cache2' => array(
+			'class' => 'CFileCache',
+
+		),*/
+
 		/*'db'=>array(
 			'connectionString' => 'sqlite:protected/data/blog.db',
 			'tablePrefix' => 'tbl_',
@@ -64,6 +80,7 @@ return array(
 			'password' => '',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
+			'schemaCachingDuration' => 100,
 		),
 
 		'errorHandler'=>array(
