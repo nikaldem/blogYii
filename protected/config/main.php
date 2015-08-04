@@ -66,6 +66,10 @@ return array(
 
 		),*/
 
+		'file' => array(
+			'class' => 'ext.file.CFile'
+		),
+
 		/*'db'=>array(
 			'connectionString' => 'sqlite:protected/data/blog.db',
 			'tablePrefix' => 'tbl_',
