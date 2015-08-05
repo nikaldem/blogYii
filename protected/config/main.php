@@ -6,6 +6,7 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 
+
 Yii::setPathOfAlias("actions",dirname(__FILE__)."/../actions");
 
 return array(

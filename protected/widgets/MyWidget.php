@@ -13,6 +13,4 @@ class MyWidget extends CWidget
     }
 
 
-
-
 }

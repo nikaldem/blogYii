@@ -9,4 +9,5 @@ $this->widget('application.extensions.fancybox.EFancyBox', array(
 ?>
 
 
+
 <a href="/blogYii/images/SQL.jpg" rel="gallery"><img src="/blogYii/images/SQL.jpg"></a>
