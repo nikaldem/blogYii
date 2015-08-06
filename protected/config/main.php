@@ -23,6 +23,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'application.vendors.*',
+		'application.widgets.*',
 
 	),
 

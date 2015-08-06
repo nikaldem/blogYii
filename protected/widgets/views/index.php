@@ -1,3 +1,5 @@
+<h3><?=$header ?></h3>
+
 <?
 
   foreach($model as $data):
