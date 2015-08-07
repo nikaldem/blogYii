@@ -24,6 +24,7 @@ return array(
 		'application.components.*',
 		'application.vendors.*',
 		'application.widgets.*',
+		'application.validators.*',
 
 	),
 

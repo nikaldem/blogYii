@@ -22,6 +22,8 @@ class ContactForm extends CFormModel
 			// name, email, subject and body are required
 			array('name, email, subject, body', 'required'),
 			// email has to be a valid email address
+			array('name', 'MaxCharValidator'),
+			//подключение нашего валидатора - макс. кол-во символов в поле равно 10
 			array('email', 'email'),
 			// verifyCode needs to be entered correctly
 			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
