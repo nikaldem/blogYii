@@ -96,7 +96,12 @@ return array(
 		),
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName' => false,
 			'rules'=>array(
+				array(
+					'class' => 'application.components.MyUrl',
+				),
+				'url_4648' => 'url/index',
 				'post/<id:\d+>/<title:.*?>'=>'post/view',
 				'posts/<tag:.*?>'=>'post/index',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

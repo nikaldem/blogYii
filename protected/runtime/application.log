@@ -925,3 +925,19 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/blogYii/behavior
 ---
+2015/08/10 18:28:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "createurl".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('createurl')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/createurl
+---
+2015/08/10 18:35:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "createurl".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('createurl')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/createurl
+---
