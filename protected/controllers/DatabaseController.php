@@ -134,7 +134,16 @@ class DatabaseController extends Controller
 
         $this->render("provider",array("dataProvider" => $dataProvider));
 
+    }
 
+    public function actionProfile()
+    {
+        $model = User::model()->findAll();
+
+        foreach($model as $data)
+        {
+            print $data->email."<br>";
+        }
 
     }
 
