@@ -118,7 +118,7 @@ return array(
 					'levels'=>'error, warning',
 					),
 				// uncomment the following to show log messages on web pages
-				array(
+				/*array(
 
 					'class'=>'CProfileLogRoute',
 					'levels'=>'profile',
@@ -128,7 +128,7 @@ return array(
 				array(
 					'class'=>'CWebLogRoute',
 				),
-
+				*/
 			),
 		),
 	),
