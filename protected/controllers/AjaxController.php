@@ -23,6 +23,23 @@ class AjaxController extends Controller
 
     }
 
+    public function actionJq()
+    {
+        Yii::app()->clientScript->registerCoreScript("jquery");
+        Yii::app()->clientScript->registerCoreScript("jquery.ui");
+
+        $this->render("jq");
+    }
+
+
+    public function actionPackage()
+    {
+        Yii::app()->clientScript->registerPackage("mypackage");
+
+        $this->render("package");
+
+    }
+
 
 
 

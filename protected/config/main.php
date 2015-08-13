@@ -44,6 +44,18 @@ return array(
 
 	// application components
 	'components'=>array(
+
+		'clientScript' => array(
+			'packages' => array(
+				'mypackage' => array(
+					'baseUrl' => '/',
+					'js' => array("/js/main.js","/js/main2.js","/js/main3.js"),
+					'css' => array("/css/main.css","/css/main2.css","/css/main3.css"),
+					'depends' => array("jquery"),
+				),
+			),
+		),
+
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -81,6 +93,30 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=blog',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '',
+			'charset' => 'utf8',
+			'tablePrefix' => 'tbl_',
+			'schemaCachingDuration' => 100,
+			'enableProfiling' => true,
+			'enableParamLogging' => true,
+		),
+
+		'db2'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=blog',
+			'emulatePrepare' => true,
+			'username' => 'root',
+			'password' => '',
+			'charset' => 'utf8',
+			'tablePrefix' => 'tbl_',
+			'schemaCachingDuration' => 100,
+			'enableProfiling' => true,
+			'enableParamLogging' => true,
+		),
+
+		'db3'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=blog',
 			'emulatePrepare' => true,
 			'username' => 'root',

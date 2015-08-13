@@ -67,6 +67,12 @@ class Post extends CActiveRecord
 		);
 	}
 
+	public function getDbConnection()
+	{
+		return Yii::app()->db2;
+
+	}
+
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */

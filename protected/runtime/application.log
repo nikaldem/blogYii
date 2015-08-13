@@ -941,3 +941,13 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/blogYii/createurl
 ---
+2015/08/13 17:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "db".' in Z:\domains\localhost\blogYii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CController.php(270): CController->missingAction('db')
+#1 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('db')
+#2 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/db')
+#3 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/blogYii/ajax/db
+---
