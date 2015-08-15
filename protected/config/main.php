@@ -14,6 +14,7 @@ return array(
 	//'name'=>'Yii Blog Demo',
 	'name'=>'Мое приложение',
 	'language'=>'ru',
+	'theme' => 'mytheme',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

@@ -951,3 +951,712 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/blogYii/ajax/db
 ---
+2015/08/14 18:31:26 [error] [exception.CException] exception 'CException' with message 'Конфигурация объекта должна быть представлена массивом, содержащим элемент "class".' in Z:\domains\localhost\blogYii\framework\YiiBase.php:193
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 Z:\domains\localhost\blogYii\framework\base\CModule.php(103): CModule->getComponent('db2')
+#2 Z:\domains\localhost\blogYii\protected\models\Post.php(72): CModule->__get('db2')
+#3 Z:\domains\localhost\blogYii\framework\db\ar\CActiveRecord.php(670): Post->getDbConnection()
+#4 Z:\domains\localhost\blogYii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#5 Z:\domains\localhost\blogYii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#6 Z:\domains\localhost\blogYii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#7 Z:\domains\localhost\blogYii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#8 Z:\domains\localhost\blogYii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#9 Z:\domains\localhost\blogYii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#10 Z:\domains\localhost\blogYii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#11 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(147): CListView->init()
+#12 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#13 Z:\domains\localhost\blogYii\themes\mytheme\views\post\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(126): require('Z:\\domains\\loca...')
+#15 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\\domains\\loca...', Array, true)
+#16 Z:\domains\localhost\blogYii\framework\web\CController.php(869): CBaseController->renderFile('Z:\\domains\\loca...', Array, true)
+#17 Z:\domains\localhost\blogYii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 Z:\domains\localhost\blogYii\protected\controllers\PostController.php(136): CController->render('index', Array)
+#19 Z:\domains\localhost\blogYii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#20 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\domains\localhost\blogYii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\domains\localhost\blogYii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\domains\localhost\blogYii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\domains\localhost\blogYii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\domains\localhost\blogYii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\domains\localhost\blogYii\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('')
+#29 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#30 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#31 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#32 {main}
+REQUEST_URI=/blogYii/
+---
+2015/08/15 16:23:24 [error] [exception.CException] exception 'CException' with message 'Конфигурация объекта должна быть представлена массивом, содержащим элемент "class".' in Z:\domains\localhost\blogYii\framework\YiiBase.php:193
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 Z:\domains\localhost\blogYii\framework\base\CModule.php(103): CModule->getComponent('db2')
+#2 Z:\domains\localhost\blogYii\protected\models\Post.php(72): CModule->__get('db2')
+#3 Z:\domains\localhost\blogYii\framework\db\ar\CActiveRecord.php(670): Post->getDbConnection()
+#4 Z:\domains\localhost\blogYii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#5 Z:\domains\localhost\blogYii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#6 Z:\domains\localhost\blogYii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#7 Z:\domains\localhost\blogYii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#8 Z:\domains\localhost\blogYii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#9 Z:\domains\localhost\blogYii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#10 Z:\domains\localhost\blogYii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#11 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(147): CListView->init()
+#12 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#13 Z:\domains\localhost\blogYii\themes\mytheme\views\post\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(126): require('Z:\\domains\\loca...')
+#15 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\\domains\\loca...', Array, true)
+#16 Z:\domains\localhost\blogYii\framework\web\CController.php(869): CBaseController->renderFile('Z:\\domains\\loca...', Array, true)
+#17 Z:\domains\localhost\blogYii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 Z:\domains\localhost\blogYii\protected\controllers\PostController.php(136): CController->render('index', Array)
+#19 Z:\domains\localhost\blogYii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#20 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\domains\localhost\blogYii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\domains\localhost\blogYii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\domains\localhost\blogYii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\domains\localhost\blogYii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\domains\localhost\blogYii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\domains\localhost\blogYii\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('')
+#29 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#30 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#31 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#32 {main}
+REQUEST_URI=/blogYii/
+---
+2015/08/15 16:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\domains\localhost\blogYii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/blogYii/site/
+---
+2015/08/15 16:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemecss/style.css".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemec...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemecss/style.css
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/modernizr-1.5.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/modernizr-1.5.min.js
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/jquery.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/jquery.min.js
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/image_slide.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/image_slide.js
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index.html".' in Z:\domains\localhost\blogYii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index.html')
+#3 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/blogYii/site/index.html
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemecss/style.css".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemec...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemecss/style.css
+HTTP_REFERER=http://localhost/blogYii/site/index.html
+---
+2015/08/15 16:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/modernizr-1.5.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/modernizr-1.5.min.js
+HTTP_REFERER=http://localhost/blogYii/site/index.html
+---
+2015/08/15 16:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/jquery.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/jquery.min.js
+HTTP_REFERER=http://localhost/blogYii/site/index.html
+---
+2015/08/15 16:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/site/index.html
+---
+2015/08/15 16:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/image_slide.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/image_slide.js
+HTTP_REFERER=http://localhost/blogYii/site/index.html
+---
+2015/08/15 16:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/site/index.html
+---
+2015/08/15 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "contact.html".' in Z:\domains\localhost\blogYii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CController.php(270): CController->missingAction('contact.html')
+#1 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('contact.html')
+#2 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact.ht...')
+#3 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/blogYii/site/contact.html
+HTTP_REFERER=http://localhost/blogYii/site/index.html
+---
+2015/08/15 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemecss/style.css".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemec...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemecss/style.css
+HTTP_REFERER=http://localhost/blogYii/site/contact.html
+---
+2015/08/15 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/modernizr-1.5.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/modernizr-1.5.min.js
+HTTP_REFERER=http://localhost/blogYii/site/contact.html
+---
+2015/08/15 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/site/contact.html
+---
+2015/08/15 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/jquery.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/jquery.min.js
+HTTP_REFERER=http://localhost/blogYii/site/contact.html
+---
+2015/08/15 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/image_slide.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/image_slide.js
+HTTP_REFERER=http://localhost/blogYii/site/contact.html
+---
+2015/08/15 16:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/site/contact.html
+---
+2015/08/15 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\domains\localhost\blogYii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/blogYii/site/
+---
+2015/08/15 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemecss/style.css".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemec...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemecss/style.css
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/modernizr-1.5.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/modernizr-1.5.min.js
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/jquery.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/jquery.min.js
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/image_slide.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/image_slide.js
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/site/
+---
+2015/08/15 16:26:05 [error] [exception.CException] exception 'CException' with message 'Конфигурация объекта должна быть представлена массивом, содержащим элемент "class".' in Z:\domains\localhost\blogYii\framework\YiiBase.php:193
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\base\CModule.php(393): YiiBase::createComponent(Array)
+#1 Z:\domains\localhost\blogYii\framework\base\CModule.php(103): CModule->getComponent('db2')
+#2 Z:\domains\localhost\blogYii\protected\models\Post.php(72): CModule->__get('db2')
+#3 Z:\domains\localhost\blogYii\framework\db\ar\CActiveRecord.php(670): Post->getDbConnection()
+#4 Z:\domains\localhost\blogYii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#5 Z:\domains\localhost\blogYii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#6 Z:\domains\localhost\blogYii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#7 Z:\domains\localhost\blogYii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#8 Z:\domains\localhost\blogYii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#9 Z:\domains\localhost\blogYii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#10 Z:\domains\localhost\blogYii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#11 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(147): CListView->init()
+#12 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#13 Z:\domains\localhost\blogYii\themes\mytheme\views\post\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(126): require('Z:\\domains\\loca...')
+#15 Z:\domains\localhost\blogYii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\\domains\\loca...', Array, true)
+#16 Z:\domains\localhost\blogYii\framework\web\CController.php(869): CBaseController->renderFile('Z:\\domains\\loca...', Array, true)
+#17 Z:\domains\localhost\blogYii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 Z:\domains\localhost\blogYii\protected\controllers\PostController.php(136): CController->render('index', Array)
+#19 Z:\domains\localhost\blogYii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#20 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\domains\localhost\blogYii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\domains\localhost\blogYii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\domains\localhost\blogYii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\domains\localhost\blogYii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\domains\localhost\blogYii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\domains\localhost\blogYii\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('')
+#29 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#30 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#31 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#32 {main}
+REQUEST_URI=/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemecss/style.css".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemec...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemecss/style.css
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/modernizr-1.5.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/modernizr-1.5.min.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/jquery.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/jquery.min.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/image_slide.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/image_slide.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "js/modernizr-1.5.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/modernizr-1....')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/js/modernizr-1.5.min.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/style.css".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('css/style.css')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/css/style.css
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "js/jquery.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery.min.j...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/js/jquery.min.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "js/image_slide.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('js/image_slide....')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/js/image_slide.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/home_1.j...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/images/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/home_2.j...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/images/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/home_1.j...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/images/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "images/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/home_2.j...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/images/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:35:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/modernizr-1.5.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/modernizr-1.5.min.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:35:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/jquery.min.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/jquery.min.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:35:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemejs/image_slide.js".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemej...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemejs/image_slide.js
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_1.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_1.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "themes/mythemeimages/home_2.jpg".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/mythemei...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/themes/mythemeimages/home_2.jpg
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:42:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "contact.html".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('contact.html')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/contact.html
+HTTP_REFERER=http://localhost/blogYii/
+---
+2015/08/15 16:42:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "projects.html".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('projects.html')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/projects.html
+HTTP_REFERER=http://localhost/blogYii/contact.html
+---
+2015/08/15 16:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "testimonials.html".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('testimonials.ht...')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/testimonials.html
+HTTP_REFERER=http://localhost/blogYii/projects.html
+---
+2015/08/15 16:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ourwork.html".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('ourwork.html')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/ourwork.html
+HTTP_REFERER=http://localhost/blogYii/testimonials.html
+---
+2015/08/15 16:42:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "index.html".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.html')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/index.html
+HTTP_REFERER=http://localhost/blogYii/ourwork.html
+---
+2015/08/15 18:20:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "contact".' in Z:\domains\localhost\blogYii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CController.php(270): CController->missingAction('contact')
+#1 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/contact')
+#3 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/blogYii/post/contact
+---
+2015/08/15 18:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\domains\localhost\blogYii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/blogYii/site/
+---
+2015/08/15 18:29:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\domains\localhost\blogYii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\domains\localhost\blogYii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#9 {main}
+REQUEST_URI=/blogYii/site/page
+---
+2015/08/15 18:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\domains\localhost\blogYii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\domains\localhost\blogYii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#9 {main}
+REQUEST_URI=/blogYii/site/page
+---
+2015/08/15 18:30:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\domains\localhost\blogYii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\domains\localhost\blogYii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#9 {main}
+REQUEST_URI=/blogYii/site/page
+---
+2015/08/15 18:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\domains\localhost\blogYii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\domains\localhost\blogYii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#9 {main}
+REQUEST_URI=/blogYii/site/page
+---
+2015/08/15 18:30:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемый шаблон вида "index" не найден.' in Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 Z:\domains\localhost\blogYii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\domains\localhost\blogYii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\domains\localhost\blogYii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\domains\localhost\blogYii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#9 {main}
+REQUEST_URI=/blogYii/site/page
+---
+2015/08/15 18:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "view".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('view')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/view
+---
+2015/08/15 18:31:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "view/about".' in Z:\domains\localhost\blogYii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\domains\localhost\blogYii\framework\web\CWebApplication.php(141): CWebApplication->runController('view/about')
+#1 Z:\domains\localhost\blogYii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 Z:\domains\localhost\blogYii\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogYii/view/about
+---
