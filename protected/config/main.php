@@ -45,6 +45,8 @@ return array(
 
 	// application components
 	'components'=>array(
+		'enableCsrfValidation' => true,
+		'enableCockieValidation' => true,
 
 		'clientScript' => array(
 			'packages' => array(
